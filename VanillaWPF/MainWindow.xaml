@@ -4,9 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VanillaWPF"
+        xmlns:Thermometer="clr-namespace:VanillaWPF.Controls.Thermometer;assembly=VanillaWPF.Controls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450"
+        Width="800">
     <Grid>
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Slider Grid.Column="1"
+                Margin="50,0,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="32"
+                Height="300"
+                Maximum="100"
+                Minimum="0"
+                Value="37"
+                Name="tempSlider"
+                Orientation="Vertical" />
+        <Thermometer:Thermometer Grid.Column="1"
+                                 HorizontalAlignment="Center"
+                                 Width="100"
+                                 VerticalAlignment="Stretch"
+                                 Temperature="{Binding Value, ElementName=tempSlider}"
+                                 IsCelsius="True"
+                                 MaxTemperature="100"
+                                 MinTemperature="0" />
     </Grid>
 </Window>
