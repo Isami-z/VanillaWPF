@@ -1,0 +1,35 @@
+﻿<Window x:Class="VanillaWPF.InkPad"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VanillaWPF"
+        mc:Ignorable="d"
+        Title="InkPad" Height="450" Width="800">
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <InkCanvas x:Name="InkCanvas1"
+            Background="LightYellow" />
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button Width="100"
+                    Height="50"
+                    Content="清除"
+                    Click="Button_Click"/>
+            <Button Width="100"
+                    Height="50"
+                    Content="关闭"
+                    Click="Button_Click_1"/>
+        </StackPanel>
+    </Grid>-->
+    <local:CustomStackPanel>
+        <Button Content="Hello"
+                Height="100"/>
+        <Button Content="World" />
+        <Button Content="!" />
+    </local:CustomStackPanel>
+</Window>
