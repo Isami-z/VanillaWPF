@@ -1,0 +1,21 @@
+﻿<Window x:Class="VanillaWPF.FileInputBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VanillaWPF"
+        xmlns:control="clr-namespace:VanillaWPF.Controls;assembly=VanillaWPF.Controls"
+        mc:Ignorable="d"
+        Title="FileInputBox"
+        Height="450"
+        Width="800">
+    <Grid>
+        <control:FileInputBox BorderBrush="Orange"
+                              BorderThickness="4"
+                              Background="Blue"
+                              HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              />
+        <!--UserControl的content如果不加限制可能直接被用户修改。-->
+    </Grid>
+</Window>
