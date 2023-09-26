@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace VanillaWPF
+namespace VanillaWPFDemo
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +24,20 @@ namespace VanillaWPF
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Debug.WriteLine($"{e.Source} mousedown event");
+        }
+        bool likeFisk = false;
+        private void Window_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Debug.WriteLine($"{e.Source} previewmousedown event");
+            if (e.Source is Rectangle && !likeFisk)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

@@ -7,8 +7,4 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\VanillaWPF.Controls\VanillaWPF.Controls.csproj" />
-  </ItemGroup>
-
 </Project>

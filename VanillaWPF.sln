@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34003.232
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VanillaWPF", "VanillaWPF\VanillaWPF.csproj", "{7AD1372D-4379-4E1E-8C76-3A4CB13CD7E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanillaWPF.Controls", "VanillaWPF.Controls\VanillaWPF.Controls.csproj", "{DC2A06F6-F270-4169-A287-B47000AD2AD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VanillaWPF.Controls", "VanillaWPF.Controls\VanillaWPF.Controls.csproj", "{DC2A06F6-F270-4169-A287-B47000AD2AD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
