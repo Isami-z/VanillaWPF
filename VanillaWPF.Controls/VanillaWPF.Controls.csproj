@@ -6,4 +6,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\avatar.png" />
+    <None Remove="Assets\SoftEdgeMask.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\avatar.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\SoftEdgeMask.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

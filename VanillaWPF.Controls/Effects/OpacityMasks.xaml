@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="VanillaWPF.Controls.Effects.OpacityMasks"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:VanillaWPF.Controls.Effects"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ImageBrush x:Key="SoftEdgeMask"
+                    ImageSource="/VanillaWPF.Controls;component/Assets/SoftEdgeMask.png" />
+    </UserControl.Resources>
+    <Grid>
+        <Rectangle Fill="Beige"
+                   Width="200"
+                   Height="200"
+                   StrokeThickness="3"
+                   Stroke="Black"
+                   OpacityMask="{StaticResource SoftEdgeMask}" />
+    </Grid>
+</UserControl>

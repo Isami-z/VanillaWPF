@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VanillaWPF", "VanillaWPF\Va
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VanillaWPF.Controls", "VanillaWPF.Controls\VanillaWPF.Controls.csproj", "{DC2A06F6-F270-4169-A287-B47000AD2AD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VanillaWPF.MVVMToolkit", "VanillaWPF.MVVMToolkit\VanillaWPF.MVVMToolkit.csproj", "{772F8810-5D53-4424-82F8-26ADFBFBACD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DC2A06F6-F270-4169-A287-B47000AD2AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC2A06F6-F270-4169-A287-B47000AD2AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC2A06F6-F270-4169-A287-B47000AD2AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{772F8810-5D53-4424-82F8-26ADFBFBACD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{772F8810-5D53-4424-82F8-26ADFBFBACD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{772F8810-5D53-4424-82F8-26ADFBFBACD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{772F8810-5D53-4424-82F8-26ADFBFBACD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
