@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:VanillaWPF.Controls">
+    <Style TargetType="{x:Type local:ToggleSwitch}">
+
+        <Setter Property="MaxHeight"
+                Value="30" />
+        <Setter Property="MaxWidth"
+                Value="60" />
+        <Setter Property="MinHeight"
+                Value="30" />
+        <Setter Property="MinWidth"
+                Value="30" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ToggleSwitch}">
+                    <Border x:Name="background"
+                            Background="#FFD1D1D1"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="15">
+                        <Ellipse x:Name="ellipse"
+                                 Fill="#FF2F8FD1"
+                                 HorizontalAlignment="Left"
+                                 Margin="4"
+                                 Width="22" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked"
+                                 Value="True">
+                            <Setter TargetName="ellipse"
+                                    Property="HorizontalAlignment"
+                                    Value="Right" />
+                            <Setter TargetName="background"
+                                    Property="Background"
+                                    Value="#FF64F94A" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
