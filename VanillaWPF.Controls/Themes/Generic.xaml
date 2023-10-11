@@ -4,5 +4,6 @@
         <ResourceDictionary Source="/VanillaWPF.Controls;component/Themes/ToggleSwitch.xaml" />
         <ResourceDictionary Source="/VanillaWPF.Controls;component/Themes/LinearGradientButton.xaml" />
         <ResourceDictionary Source="/VanillaWPF.Controls;component/Themes/RoundedButton.xaml" />
+        <ResourceDictionary Source="/VanillaWPF.Controls;component/Themes/StarRating.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
